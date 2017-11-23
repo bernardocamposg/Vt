@@ -1,3 +1,9 @@
+.encabezado{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
 .botonregistro {
     margin-left: 80px !important;
 }
@@ -7,10 +13,14 @@
 }
 .registroformulario {
     width: 50%;
-    display: inline-block;
+    z-index: -1;
+    text-align: center;
+    margin: 0%;
+    margin-left: 25%;
 }
 .mapa {
-    margin-left: 280px;
+    text-align: center;
+    width: 100%;
 }
 .textocontacto {
     text-align: center;
@@ -18,12 +28,16 @@
 .titulocontacto {
     text-align: center;
     font-size: 40px;
+    
 }
 
 .contactoformulario {
     width: 50%;
-    display: inline-block;
-    margin-left: 350px;
+    z-index: -1;
+    text-align: center;
+    margin: 0%;
+    margin-left: 25%;
+    
 }
 button {
     /* Este margen extra representa aproximadamente el mismo espacio que el espacio
@@ -60,7 +74,7 @@ input, textarea {
 }
 .labelformulario {
     /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
-    display: inline-block;
+    
     width: 170px !important;
     text-align: right;
 }
@@ -106,14 +120,14 @@ serimg {
     text-align: right
 }
 .res {
-    padding-left: 13em;
+    
 }
 .derechos {
     color: aliceblue;
     text-align: center;
 }
 footer {
-    but
+    
     height: 50px;
     background-color: black;
 }
@@ -156,12 +170,13 @@ body {
 .navbar{
     padding: 0rem 0rem !important;
     padding-left: 1rem !important;
+    z-index: 3;
     
 }
 
 .navbar-light .navbar-nav .nav-link{
    /* color: white !important;*/
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(109,198,235) !important;
     
 }
@@ -171,7 +186,9 @@ body {
 }
 .navbar-light .navbar-nav .nav-link{
    /* color: white !important;*/
-    font-size: 22px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-link.active,.nav-pills .nav-link.active,
