@@ -117,9 +117,10 @@ serimg {
 .rellenoright {
     width: 49%;
     display: inline-block;
-    text-align: right
+    text-align: right;
 }
 .res {
+    display: inline-block
     
 }
 .derechos {
@@ -143,18 +144,31 @@ p {
     text-align: center;
 }
 .bloqueslidercompleto {
-    padding: 2em;
+    
     width: 100%;
-    background-color: rgb(66,72,77);
+    
 }
 .bloqueslider {
-    width: 45% !important;
+    width: 100% !important;
     background-color: beige;
-    margin-left: 30%;
+    margin-left: 0%;
 }
 .imgs {
-    width: 620px;
-    height: 290px !important;
+    width: 100%;
+    height:  540px!important;
+}
+.flechabajar{
+
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50%;
+    z-index: 200;
+}
+.botonloging{
+    position: absolute;
+    float: right;
+    margin-right: 12%;
 }
 * {
 	padding: 0;
@@ -171,6 +185,7 @@ body {
     padding: 0rem 0rem !important;
     padding-left: 1rem !important;
     z-index: 3;
+    
     
 }
 
