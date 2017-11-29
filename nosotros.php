@@ -11,36 +11,38 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color: #f4f4f4;">
+ <section class="encabezado">
+    <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color: whitesmoke;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><img src="img/iconoMenu.png" width="46px"></span>
         </button>
         <a class="navbar-brand " href="#index.html">
-        <img src="img/logoAnimal.png" width="130"class="d-inline-block align-top" alt="">
+        <img src="img/logoAnimal.png" width="200"class="d-inline-block align-top" alt="">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
             <ul class="navbar-nav" id="">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" width: 50px>Inicio</a>
+                    <a class="nav-link" href="index.php" width: 50px>Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="servicios.php">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link active" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.php">Contacto</a>
                 </li>
                 <li class="res nav-item ">
-                    <a class="nav-link" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="registrarse.php">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+                    <a class="nav-link" href="iniciarSesion.php">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
+    </section>
 
     <div class="base">
     </div>

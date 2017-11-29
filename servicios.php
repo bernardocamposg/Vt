@@ -21,22 +21,22 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
             <ul class="navbar-nav" id="">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" width: 50px>Inicio</a>
+                    <a class="nav-link" href="index.php" width: 50px>Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="servicios.html">Servicios</a>
+                    <a class="nav-link active" href="servicios.php">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.php">Contacto</a>
                 </li>
                 <li class="res nav-item ">
-                    <a class="nav-link" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="registrarse.php">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+                    <a class="nav-link" href="iniciarSesion.php">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>

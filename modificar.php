@@ -1,3 +1,18 @@
+<?php
+session_start();
+$correo = $_SESSION['email'];
+require_once("conexiones/conexion.php");
+$sql = "SELECT*from formularios where email='{$correo}'";
+$resultado = $conn->query($sql);
+$actor = $resultado->fetch_assoc();
+?>
+<?php 
+$id = $_REQUEST['idq'];
+require_once("conexiones/conexion.php");
+$query= "Select nombre,raza,edad,agenda_id from agendas where agenda_id='{$id}'";
+$resu=$conn->query($query);
+$row=$resu->fetch_assoc();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,61 +36,50 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
             <ul class="navbar-nav" id="">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" width: 50px>Inicio</a>
+                    <a class="nav-link" href="bienvenido.php" width: 50px>Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="agregar.php">Agregar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link active" href="modificar.php">Modificar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="res nav-item ">
-                    <a class="nav-link" href="registrarse.html">Registrarse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  active" href="iniciarSesion.html">Iniciar Sesion</a>
+                    <a class="nav-link" href="index.php">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
-
     <div class="base">
     </div>
-
-    <section class="container">
-        <h3 class="titulocontacto">Resgistrarse</h3>
-        <p class="lead textocontacto">Favor de llenar los campos para estar registrado y así tener "una agenda para tu mascota"</p>
-    </section>
-    <section class="container">
-        <div class="registroformulario">
-            <form action="/my-handling-form-page" method="post">
-                <div>
-                    <label class="labelformulario" for="email">E-mail:</label>
-                    <input type="email" id="mail" />
-                </div>
-                <div>
-                    <label class="labelformulario" for="password">Contraseña</label>
-                    <input type="password" id="name" />
-                </div>
-                <div class="botonregistro form-group">
-                    <button class="btn btn-danger">Enviar</button>
-                </div>
+    <h3>Modificar</h3>
+    
+    <div class="registroformulario">
+            <form action="modificando.php" method="get" name="formMascota">
                 
+                <div>
+                    <label class="labelformulario" for="nombre">Nombre de su mascota:</label>
+                    <input type="text" id="mascota" name="mascota" maxlength="20" value="<?php echo $row['nombre'] ?>"/>
+                </div>
+                <div>
+                    <label class="labelformulario" for="raza">Raza de su mascota:</label>
+                    <input type="text" id="raza" name="raza" maxlength="20" value="<?php echo $row['raza'] ?>"/>
+                </div>
+                <div>
+                    <label class="labelformulario" for="edad">Edad de su mascota:</label>
+                    <input type="text" id="edad" name="edad" maxlength="20" value="<?php echo $row['edad'] ?>"/>
+                </div>
+                    <input type="submit" value="guardar" id="subir" onClick="guardarmascotas()">
+                    <input type="hidden" name="idq" value="<?php echo $row['agenda_id']; ?>">
             </form>
         </div>
-        <div class="imgregistroformulario">
-            
-        </div>
-    </section>
-
+    
     <footer>
         <br>
         <p class="derechos"> Derechos reservados a UNIPOLIDGO</p>
         <br>
     </footer>
+    <script type="application/javascript" src="js/scripts.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/bootstrap.min.js"></script>

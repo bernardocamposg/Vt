@@ -21,22 +21,22 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
             <ul class="navbar-nav" id="">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" width: 50px>Inicio</a>
+                    <a class="nav-link" href="index.php" width: 50px>Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="servicios.php">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.php">Contacto</a>
                 </li>
                 <li class="res nav-item ">
-                    <a class="nav-link" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="registrarse.php">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+                    <a class="nav-link  active" href="iniciarSesion.php">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>
@@ -46,37 +46,31 @@
     </div>
 
     <section class="container">
-        <h3 class="titulocontacto">Contactanos</h3>
-        <p class="lead textocontacto">Para alguna sugerencia o alguna duda favor de enciar un mensaje y asi resolveremos sus dudas.</p>
+        <h3 class="titulocontacto">Resgistrarse</h3>
+        <p class="lead textocontacto">Favor de llenar los campos para estar registrado y así tener "una agenda para tu mascota"</p>
     </section>
     <section class="container">
-        <div class="contactoformulario">
-            <form action="/my-handling-form-page" method="post">
+        <div class="registroformulario">
+            <form action="login.php" method="get">
                 <div>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" />
+                    <label class="labelformulario" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"/>
                 </div>
                 <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" />
+                    <label class="labelformulario" for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" />
                 </div>
-                <div>
-                    <label for="msg">Mensaje:</label>
-                    <textarea id="msg"></textarea>
-                </div>
-
-                <div class="form-group">
+                <div class="botonregistro form-group">
                     <button class="btn btn-danger">Enviar</button>
                 </div>
+                
             </form>
         </div>
+        <div class="imgregistroformulario">
+            
+        </div>
     </section>
-    <br>
-    <div class="container">
-        <h3 class="titulocontacto">Ubicación</h3>
-        <!--<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.2490370352634!2d-104.55607678563608!3d24.022281684253798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb0afe49269e1%3A0x43644f8b73e439ad!2sUniversidad+Politecnica+de+Durango!5e0!3m2!1ses-419!2smx!4v1511414338422" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-    </div>
-    <br>
+
     <footer>
         <br>
         <p class="derechos"> Derechos reservados a UNIPOLIDGO</p>

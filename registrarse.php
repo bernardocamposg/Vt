@@ -7,40 +7,45 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <script src="js/jquery.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color: #f4f4f4;">
+    <section class="encabezado">
+    <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color: whitesmoke;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><img src="img/iconoMenu.png" width="46px"></span>
         </button>
         <a class="navbar-brand " href="#index.html">
-        <img src="img/logoAnimal.png" width="130"class="d-inline-block align-top" alt="">
+        <img src="img/logoAnimal.png" width="200"class="d-inline-block align-top" alt="">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
             <ul class="navbar-nav" id="">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" width: 50px>Inicio</a>
+                    <a class="nav-link" href="index.php" width: 50px>Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="servicios.php">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="contacto.php">Contacto</a>
                 </li>
                 <li class="res nav-item ">
-                    <a class="nav-link active" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link active" href="registrarse.php">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="iniciarSesion.html">Iniciar Sesion</a>
+                    <a class="nav-link" href="iniciarSesion.php">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
+    </section>
+    <br>
+    <br>
 
     <div class="base">
     </div>
@@ -51,40 +56,36 @@
     </section>
     <section class="container">
         <div class="registroformulario">
-            <form action="/my-handling-form-page" method="post">
+            <form action="registrar.php" method="get" name="form">
                 <div>
                     <label class="labelformulario" for="nombre">Nombre:</label>
-                    <input type="text" id="name" />
+                    <input type="text" id="nombre" name="nombre" maxlength="20"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="apaterno">Apellido Paterno:</label>
-                    <input type="text" id="name" />
+                    <input type="text" id="apaterno" name="apaterno" maxlength="20"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="amaterno">Apellido Materno:</label>
-                    <input type="text" id="name" />
+                    <input type="text" id="amaterno" name="amaterno" maxlength="20"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="telefono">Telefono:</label>
-                    <input type="number" id="name" />
+                    <input type="number" id="telefono" name="telefono" maxlength="12"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="email">E-mail:</label>
-                    <input type="email" id="mail" />
+                    <input type="email" id="email" name="email" maxlength="40"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="password">Contraseña</label>
-                    <input type="password" id="name" />
+                    <input type="password" id="password" name="password" maxlength="20"/>
                 </div>
                 <div>
                     <label class="labelformulario" for="cpassword">Confirmar Contraseña</label>
-                    <input type="password" id="name" />
+                    <input type="password" id="cpassword" name="cpassword" maxlength="20"/>
                 </div>
-                
-                <div class="botonregistro form-group">
-                    <button class="btn btn-danger">Enviar</button>
-                </div>
-                
+                    <input type="button" value="guardar" id="subir" onClick="guardar()">
             </form>
         </div>
         <div class="imgregistroformulario">
@@ -102,6 +103,7 @@
         <p class="derechos"> Derechos reservados a UNIPOLIDGO</p>
         <br>
     </footer>
+    <script type="application/javascript" src="js/scripts.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/bootstrap.min.js"></script>

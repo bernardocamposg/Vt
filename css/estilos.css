@@ -1,3 +1,9 @@
+.encabezado{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
 .botonregistro {
     margin-left: 80px !important;
 }
@@ -7,10 +13,14 @@
 }
 .registroformulario {
     width: 50%;
-    display: inline-block;
+    z-index: -1;
+    text-align: center;
+    margin: 0%;
+    margin-left: 25%;
 }
 .mapa {
-    margin-left: 280px;
+    text-align: center;
+    width: 100%;
 }
 .textocontacto {
     text-align: center;
@@ -18,11 +28,20 @@
 .titulocontacto {
     text-align: center;
     font-size: 40px;
+    
 }
 
 .contactoformulario {
+<<<<<<< HEAD
     
     
+=======
+    width: 50%;
+    z-index: -1;
+    text-align: center;
+    margin: 0%;
+    margin-left: 25%;
+>>>>>>> 3154684aabaef2d2bd72dc67d5303e82257ee7c2
     
 }
 button {
@@ -60,7 +79,7 @@ input, textarea {
 }
 .labelformulario {
     /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
-    display: inline-block;
+    
     width: 170px !important;
     text-align: right;
 }
@@ -103,17 +122,18 @@ serimg {
 .rellenoright {
     width: 49%;
     display: inline-block;
-    text-align: right
+    text-align: right;
 }
 .res {
-    padding-left: 13em;
+    display: inline-block
+    
 }
 .derechos {
     color: aliceblue;
     text-align: center;
 }
 footer {
-    but
+    
     height: 50px;
     background-color: black;
 }
@@ -129,18 +149,31 @@ p {
     text-align: center;
 }
 .bloqueslidercompleto {
-    padding: 2em;
+    
     width: 100%;
-    background-color: rgb(66,72,77);
+    
 }
 .bloqueslider {
-    width: 45% !important;
+    width: 100% !important;
     background-color: beige;
-    margin-left: 30%;
+    margin-left: 0%;
 }
 .imgs {
-    width: 620px;
-    height: 290px !important;
+    width: 100%;
+    height:  540px!important;
+}
+.flechabajar{
+
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50%;
+    z-index: 200;
+}
+.botonloging{
+    position: absolute;
+    float: right;
+    margin-right: 12%;
 }
 * {
 	padding: 0;
@@ -156,12 +189,14 @@ body {
 .navbar{
     padding: 0rem 0rem !important;
     padding-left: 1rem !important;
+    z-index: 3;
+    
     
 }
 
 .navbar-light .navbar-nav .nav-link{
    /* color: white !important;*/
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(109,198,235) !important;
     
 }
@@ -171,7 +206,9 @@ body {
 }
 .navbar-light .navbar-nav .nav-link{
    /* color: white !important;*/
-    font-size: 22px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-link.active,.nav-pills .nav-link.active,
