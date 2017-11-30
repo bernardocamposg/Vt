@@ -23,7 +23,7 @@
 <body>
     
     <section class="encabezado">
-        <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color:lightblue">
+        <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color:lightblue;">
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span><img src="img/iconoMenu.png" width="46px"></span>

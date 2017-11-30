@@ -118,3 +118,42 @@
 }
 
 
+/* tablas*/
+.contenedortabla{
+    width: 100%;
+    margin-left: ;
+}
+
+.tabla1{ background-color: steelblue;
+    padding: 10px;
+ 
+}
+
+.tabla2{ background-color: lightsteelblue;
+padding: 10px 50px;}
+.tabla3{ background-color: powderblue;
+padding: 10px 50px;}
+.tabla4{ background-color: lightblue;
+padding: 10px 50px;}
+.tabla5{ background-color: skyblue;
+padding: 10px 50px;}
+.columnas1{background-color: steelblue;
+padding: 20px 50px;}
+.columnas2{background-color: lightsteelblue;}
+.columnas3{background-color: powderblue;}
+.columnas4{background-color: lightblue;}
+.columnas5{background-color: skyblue;}
+
+
+.columnas1:hover{background-color: blue;}
+.columnas2:hover{background-color: blue;}
+.columnas3:hover{background-color: blue;}
+.columnas4:hover{background-color: blue;}
+.columnas5:hover{background-color: blue;}
+
+
+.tablacompleta{
+    border: 2px;
+    border-radius: 15px;
+   
+}
