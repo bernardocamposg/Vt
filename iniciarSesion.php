@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-light navbar-toggleable-lg" style="background-color: #f4f4f4;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><img src="img/iconoMenu.png" width="46px"></span>
         </button>
         <a class="navbar-brand " href="#index.html">
         <img src="img/logoAnimal.png" width="130"class="d-inline-block align-top" alt="">
