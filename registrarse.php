@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     
     <script src="js/jquery.js"></script>
     <script type="application/javascript" src="js/scripts.js"></script>
@@ -93,56 +93,58 @@
     
     <br>
     <br>
+    <br>
+    <br>
 
-    <div class="base">
-    </div>
+   
 
     <section class="container">
-        <h3 class="titulocontacto">Resgistrarse</h3>
-        <p class="lead textocontacto">Favor de llenar los campos para estar registrado y así tener "una agenda para tu mascota"</p>
+        <h3 class=" tituloregistrarse">Resgistrarse</h3>
+        
+        
+        <p class="lead textoregistrarse">Al registrarte podras obtener una "Agenda para tu mascota" Favor de llenar de llenar los campos.</p>
     </section>
-    <section class="container">
-        <div class="registroformulario">
+  
+    <section class="contenedor">
+        <div class="form-group">
             <form action="registrar.php" method="get" name="form">
-                <div class="form-group">
-                    <label class="labelformulario" for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" maxlength="20"/>
+                <div class="">
+                    <label class="form-group" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" maxlength="20"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="apaterno">Apellido Paterno:</label>
-                    <input type="text" id="apaterno" name="apaterno" maxlength="20"/>
+                    <label class="form-group" for="apaterno">Apellido Paterno:</label>
+                    <input type="text" class="form-control" id="apaterno" name="apaterno" maxlength="20"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="amaterno">Apellido Materno:</label>
-                    <input type="text" id="amaterno" name="amaterno" maxlength="20"/>
+                    <label class="form-group" for="amaterno">Apellido Materno:</label>
+                    <input type="text" class="form-control" id="amaterno" name="amaterno" maxlength="20"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="telefono">Telefono:</label>
-                    <input type="number" id="telefono" name="telefono" maxlength="12"/>
+                    <label class="form-group" for="telefono">Telefono:</label>
+                    <input type="number" class="form-control" id="telefono" name="telefono" maxlength="12"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" maxlength="40"/>
+                    <label class="form-group" for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" maxlength="40"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" maxlength="20"/>
+                    <label class="form-group" for="password">Contraseña:</label>
+                    <input type="password" class="form-control" id="password" name="password" maxlength="20"/>
                 </div>
                 <div>
-                    <label class="labelformulario" for="cpassword">Confirmar Contraseña</label>
-                    <input type="password" id="cpassword" name="cpassword" maxlength="20"/>
+                    <label class="form-group" for="cpassword">Confirmar Contraseña:</label>
+                    <input type="password" class="form-control" id="cpassword" name="cpassword" maxlength="20"/>
                 </div>
-                    <input type="button" value="guardar" id="subir" onClick="guardar()">
+                <br>
+                <br>
+                    <input type="button" class="btn btn-success  btn-block form-control" value="guardar" id="subir" onClick="guardar()">
             </form>
         </div>
-        <div class="imgregistroformulario">
-            <img src="img/perro.jpg">
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
+        
     </section>
+        </div>
+    </div>
     <br>
     <br>
     <footer>

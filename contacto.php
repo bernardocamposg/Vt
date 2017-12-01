@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/menu.js"></script>
@@ -100,28 +100,30 @@
     
 <br>
 <br>
+<br>
+<br>
     <section class="container">
         <h3 class="titulocontacto">Contactanos</h3>
         <p class="lead textocontacto">Para alguna sugerencia o alguna duda favor de enciar un mensaje y asi resolveremos sus dudas.</p>
     </section>
-    <section class="container-fluid">
+    <section class="container">
         <div class="contactoformulario">
             <form action="/my-handling-form-page" method="post">
-                <div>
+                <div class="form-group">
                     <label for="name">Nombre:</label>
-                    <input type="text" id="name" />
+                    <input type="text" class="form-control" id="name" />
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" />
+                    <input type="email" class="form-control" id="mail" />
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="msg">Mensaje:</label>
-                    <textarea id="msg"></textarea>
+                    <textarea id="msg" class="form-control"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-danger">Enviar</button>
+                    <button class="btn btn-block btn-success">Enviar</button>
                 </div>
             </form>
         </div>
